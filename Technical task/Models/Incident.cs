@@ -7,9 +7,11 @@ namespace Technical_task.Models
 {
     public class Incident
     {
-        public int IncidentId { get; set; }
+        public int Id { get; set; }
         public string NameIncident { get; set; }
         public string Description { get; set; }
-        public int AccId { get; set; }
+
+        // Nav
+        public List<Account> Accounts { get; set; }
     }
 }
