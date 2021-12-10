@@ -1,4 +1,5 @@
-﻿using ServiceStack.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using ServiceStack.DataAnnotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Technical_task.Models
         public string Name { get; set; }
 
         // Nav
-        public List<Contact> Contacts { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
         public int IncidentId { get; set; }
 
     }

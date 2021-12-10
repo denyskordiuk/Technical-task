@@ -17,7 +17,7 @@ namespace Technical_task.Models
 
         // Nav
         public int AccountId { get; set; }
-        public Account AccountId { get; set; }
+        public Account Account { get; set; }
 
     }
 }

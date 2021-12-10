@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,6 +13,6 @@ namespace Technical_task.Models
         public string Description { get; set; }
 
         // Nav
-        public List<Account> Accounts { get; set; }
+        public DbSet<Account> Accounts { get; set; }
     }
 }
