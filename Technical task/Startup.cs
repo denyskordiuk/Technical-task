@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using WebAPIApp.Models;
 
+
 namespace WebAPIApp
 {
     public class Startup
@@ -11,6 +12,7 @@ namespace WebAPIApp
         {
             string con = "Server=(localdb)\\mssqllocaldb;Database=usersdbstore;Trusted_Connection=True;";
             services.AddDbContext<AccountContext>(options => options.UseSqlServer(con));
+
 
             services.AddControllers();
         }

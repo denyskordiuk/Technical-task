@@ -9,7 +9,6 @@ namespace Technical_task.Models
 {
     public class Account
     {
-        [PrimaryKey]
         public int Id { get; set; }
         public string Name { get; set; }
 

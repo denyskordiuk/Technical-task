@@ -10,15 +10,15 @@ namespace WebAPIApp.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    public class ValuesController : ControllerBase
     {
         AccountContext db;
-        public UsersController(AccountContext context)
+        public ValuesController(AccountContext context)
         {
             db = context;
             if (!db.Accounts.Any())
             {
-                db.Accounts.Add(new Account { Name = "John", ContactId = 1, Id = 1});
+                db.Accounts.Add(new Account { Name = "John", Id = 1 });
                 db.SaveChanges();
             }
         }
